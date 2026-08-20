@@ -33,6 +33,8 @@ const omdb1 = "Film veritaban\u0131 API entegrasyonu";
 const omdb2 = "Arama, detay ve listeleme";
 const web1 = "Web laboratuvar ve frontend denemeleri";
 const web2 = "TypeScript ile aray\u00fcz \u00e7al\u0131\u015fmalar\u0131";
+const qubit1 = "IT quiz platformu \u2014 mobil, API ve servisler";
+const qubit2 = "Monorepo: Go \u00b7 TypeScript \u00b7 Docker";
 const statsTitle = "GitHub istatistikleri";
 const repos = "A\u00e7\u0131k repolar";
 const followers = "Takip\u00e7i";
@@ -96,7 +98,8 @@ function card(file, title, line1, line2, color, lang, langColor, widthColor) {
 }
 
 card("card-cve.png", "akilli-cve-analizi", cve1, cve2, "#c084fc", "Python  FastAPI  React", "#3572A5", "#a855f7");
-card("card-terravision.png", "TerraVision", terra1, terra2, "#67e8f9", "C#  .NET", "#178600", "#22d3ee");
+card("card-qubit.png", "QubIT", qubit1, qubit2, "#67e8f9", "Go  TypeScript  Docker", "#00ADD8", "#22d3ee");
+card("card-terravision.png", "TerraVision", terra1, terra2, "#67e8f9", "C#  .NET", "#178600", "#a855f7");
 card("card-omdb.png", "omdb-project", omdb1, omdb2, "#fde047", "JavaScript", "#f1e05a", "#f7df1e");
 card("card-weblab.png", "web-lab-hello", web1, web2, "#7dd3fc", "TypeScript", "#3178c6", "#3178c6");
 

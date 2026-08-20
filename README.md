@@ -36,19 +36,19 @@ Fırat Üniversitesi **Yazılım Mühendisliği** öğrencisiyim. Backend API’
 <div align="center">
 
 [![akilli-cve-analizi](assets/card-cve.png)](https://github.com/kubradmrgc/akilli-cve-analizi)
-[![TerraVision](assets/card-terravision.png)](https://github.com/kubradmrgc/TerraVision)
+[![QubIT](assets/card-qubit.png)](https://github.com/kubradmrgc/QubIT)
 
+[![TerraVision](assets/card-terravision.png)](https://github.com/kubradmrgc/TerraVision)
 [![omdb-project](assets/card-omdb.png)](https://github.com/kubradmrgc/omdb-project)
-[![web-lab-hello](assets/card-weblab.png)](https://github.com/kubradmrgc/web-lab-hello)
 
 </div>
 
 | Proje | Ne yapıyor? | Yığın |
 |-------|-------------|-------|
 | [akilli-cve-analizi](https://github.com/kubradmrgc/akilli-cve-analizi) | NVD’den CVE çeker, AI ile özetler ve önceliklendirir | FastAPI · PostgreSQL/pgvector · React |
+| [QubIT](https://github.com/kubradmrgc/QubIT) | IT quiz platformu — mobil, API ve servisler | Go · TypeScript · Docker |
 | [TerraVision](https://github.com/kubradmrgc/TerraVision) | Backend API geliştirme | C# · .NET |
 | [omdb-project](https://github.com/kubradmrgc/omdb-project) | Film veritabanı API entegrasyonu | JavaScript |
-| [web-lab-hello](https://github.com/kubradmrgc/web-lab-hello) | Web laboratuvar / frontend denemeleri | TypeScript |
 
 ---
 
