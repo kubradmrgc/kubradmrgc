@@ -1,8 +1,8 @@
 <div align="center">
 
-![header](assets/header.svg)
+![header](assets/header.png)
 
-![typing animation](assets/typing.svg)
+![typing animation](assets/typing.png)
 
 **[GitHub](https://github.com/kubradmrgc)** · **[LinkedIn](https://www.linkedin.com/in/k%C3%BCbra-demirg%C3%BC%C3%A7-8a058728b)** · **[E-posta](mailto:kubradmrgc965@gmail.com)**
 
@@ -25,7 +25,7 @@ Fırat Üniversitesi **Yazılım Mühendisliği** öğrencisiyim. Backend API’
 
 <div align="center">
 
-![tech stack](assets/tech.svg)
+![tech stack](assets/tech.png)
 
 </div>
 
@@ -35,11 +35,11 @@ Fırat Üniversitesi **Yazılım Mühendisliği** öğrencisiyim. Backend API’
 
 <div align="center">
 
-[![akilli-cve-analizi](assets/card-cve.svg)](https://github.com/kubradmrgc/akilli-cve-analizi)
-[![TerraVision](assets/card-terravision.svg)](https://github.com/kubradmrgc/TerraVision)
+[![akilli-cve-analizi](assets/card-cve.png)](https://github.com/kubradmrgc/akilli-cve-analizi)
+[![TerraVision](assets/card-terravision.png)](https://github.com/kubradmrgc/TerraVision)
 
-[![omdb-project](assets/card-omdb.svg)](https://github.com/kubradmrgc/omdb-project)
-[![web-lab-hello](assets/card-weblab.svg)](https://github.com/kubradmrgc/web-lab-hello)
+[![omdb-project](assets/card-omdb.png)](https://github.com/kubradmrgc/omdb-project)
+[![web-lab-hello](assets/card-weblab.png)](https://github.com/kubradmrgc/web-lab-hello)
 
 </div>
 
@@ -56,8 +56,8 @@ Fırat Üniversitesi **Yazılım Mühendisliği** öğrencisiyim. Backend API’
 
 <div align="center">
 
-![GitHub stats](assets/stats.svg)
-![Top languages](assets/langs.svg)
+![GitHub stats](assets/stats.png)
+![Top languages](assets/langs.png)
 
 </div>
 
@@ -69,6 +69,6 @@ Fırat Üniversitesi **Yazılım Mühendisliği** öğrencisiyim. Backend API’
 
 **[GitHub](https://github.com/kubradmrgc)** · **[LinkedIn](https://www.linkedin.com/in/k%C3%BCbra-demirg%C3%BC%C3%A7-8a058728b)** · **[E-posta](mailto:kubradmrgc965@gmail.com)**
 
-![footer](assets/footer.svg)
+![footer](assets/footer.png)
 
 </div>
