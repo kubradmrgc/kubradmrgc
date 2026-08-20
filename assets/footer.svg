@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 120" width="1100" height="120" role="img" aria-label="footer">
+  <defs>
+    <linearGradient id="foot" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ec4899">
+        <animate attributeName="stop-color" values="#ec4899;#7c3aed;#22d3ee;#ec4899" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#7c3aed">
+        <animate attributeName="stop-color" values="#7c3aed;#db2777;#6366f1;#7c3aed" dur="10s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+  <path fill="url(#foot)">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+      values="M0,52 C180,12 370,92 550,52 C730,12 920,92 1100,52 V120 H0 Z;
+              M0,52 C180,92 370,12 550,62 C730,92 920,12 1100,52 V120 H0 Z;
+              M0,52 C180,12 370,92 550,52 C730,12 920,92 1100,52 V120 H0 Z"/>
+  </path>
+</svg>

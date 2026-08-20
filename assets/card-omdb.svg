@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="150" viewBox="0 0 420 150" role="img" aria-label="omdb-project">
+  <rect x="1.5" y="1.5" width="417" height="147" rx="14" fill="#0d1117" stroke="#a855f7" stroke-width="1.5">
+    <animate attributeName="stroke" values="#f7df1e;#a855f7;#22d3ee;#f7df1e" dur="7s" repeatCount="indefinite"/>
+  </rect>
+  <text x="22" y="38" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#fde047">omdb-project</text>
+  <text x="22" y="68" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" fill="#c9d1d9">Film veritaban1 API entegrasyonu</text>
+  <text x="22" y="88" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" fill="#8b949e">Arama, detay ve listeleme</text>
+  <circle cx="28" cy="122" r="6" fill="#f1e05a"/>
+  <text x="42" y="127" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" fill="#c9d1d9">JavaScript</text>
+</svg>

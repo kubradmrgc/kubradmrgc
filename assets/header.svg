@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 220" width="1100" height="220" role="img" aria-label="Kübra Demirgüç">
+  <defs>
+    <linearGradient id="banner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed">
+        <animate attributeName="stop-color" values="#7c3aed;#db2777;#0891b2;#7c3aed" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#a855f7">
+        <animate attributeName="stop-color" values="#a855f7;#6366f1;#ec4899;#a855f7" dur="10s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#ec4899">
+        <animate attributeName="stop-color" values="#ec4899;#22d3ee;#7c3aed;#ec4899" dur="10s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+  </defs>
+  <path fill="url(#banner)">
+    <animate attributeName="d" dur="6s" repeatCount="indefinite"
+      values="M0,0 H1100 V168 C920,208 730,128 550,168 C370,208 180,128 0,168 Z;
+              M0,0 H1100 V168 C920,128 730,208 550,148 C370,128 180,208 0,168 Z;
+              M0,0 H1100 V168 C920,208 730,128 550,168 C370,208 180,128 0,168 Z"/>
+  </path>
+  <text x="550" y="86" text-anchor="middle" font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="48" font-weight="700" fill="#ffffff">Kübra Demirgüç</text>
+  <text x="550" y="122" text-anchor="middle" font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="16" fill="#f5d0fe">Yaz1l1m Mühendislii · Backend &amp; Full-stack</text>
+</svg>

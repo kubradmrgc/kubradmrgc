@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="120" viewBox="0 0 860 120" role="img" aria-label="tech stack">
+  <style>
+    .badge { font-family: Segoe UI, Ubuntu, sans-serif; font-size: 13px; font-weight: 600; fill: #fff; }
+  </style>
+  <rect x="0" y="18" width="92" height="32" rx="8" fill="#3776AB"/>
+  <text class="badge" x="46" y="39" text-anchor="middle">Python</text>
+  <rect x="102" y="18" width="92" height="32" rx="8" fill="#009688"/>
+  <text class="badge" x="148" y="39" text-anchor="middle">FastAPI</text>
+  <rect x="204" y="18" width="80" height="32" rx="8" fill="#E76F00"/>
+  <text class="badge" x="244" y="39" text-anchor="middle">Java</text>
+  <rect x="294" y="18" width="64" height="32" rx="8" fill="#239120"/>
+  <text class="badge" x="326" y="39" text-anchor="middle">C#</text>
+  <rect x="368" y="18" width="72" height="32" rx="8" fill="#512BD4"/>
+  <text class="badge" x="404" y="39" text-anchor="middle">.NET</text>
+  <rect x="450" y="18" width="108" height="32" rx="8" fill="#F7DF1E"/>
+  <text class="badge" x="504" y="39" text-anchor="middle" fill="#111">JavaScript</text>
+  <rect x="568" y="18" width="108" height="32" rx="8" fill="#3178C6"/>
+  <text class="badge" x="622" y="39" text-anchor="middle">TypeScript</text>
+  <rect x="686" y="18" width="80" height="32" rx="8" fill="#20232A"/>
+  <text class="badge" x="726" y="39" text-anchor="middle" fill="#61DAFB">React</text>
+
+  <rect x="80" y="68" width="110" height="32" rx="8" fill="#4169E1"/>
+  <text class="badge" x="135" y="89" text-anchor="middle">PostgreSQL</text>
+  <rect x="200" y="68" width="86" height="32" rx="8" fill="#2496ED"/>
+  <text class="badge" x="243" y="89" text-anchor="middle">Docker</text>
+  <rect x="296" y="68" width="64" height="32" rx="8" fill="#F05032"/>
+  <text class="badge" x="328" y="89" text-anchor="middle">Git</text>
+  <rect x="370" y="68" width="86" height="32" rx="8" fill="#181717"/>
+  <text class="badge" x="413" y="89" text-anchor="middle">GitHub</text>
+  <rect x="466" y="68" width="72" height="32" rx="8" fill="#0078D4"/>
+  <text class="badge" x="502" y="89" text-anchor="middle">VS Code</text>
+  <rect x="548" y="68" width="72" height="32" rx="8" fill="#FCC624"/>
+  <text class="badge" x="584" y="89" text-anchor="middle" fill="#111">Linux</text>
+</svg>
