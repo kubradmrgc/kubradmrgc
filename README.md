@@ -2,7 +2,7 @@
 
 ![header](assets/header.png)
 
-![typing animation](assets/typing.png)
+![typing animation](assets/typing.gif)
 
 **[GitHub](https://github.com/kubradmrgc)** · **[LinkedIn](https://www.linkedin.com/in/k%C3%BCbra-demirg%C3%BC%C3%A7-8a058728b)** · **[E-posta](mailto:kubradmrgc965@gmail.com)**
 
