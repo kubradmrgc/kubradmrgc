@@ -10,12 +10,6 @@
   <img src="assets/live-banner.png" alt="Canlı portfolyo — kubradmrgc.github.io/portfolio" width="720" />
 </a>
 
-<a href="https://kubradmrgc.github.io/portfolio/">
-  <img src="assets/portfolio-live.png" alt="Kübra Demirgüç kişisel portfolyo sitesi" width="900" />
-</a>
-
-<sub>React · TypeScript · Vite · Tailwind — seçilmiş işler, deneyim ve iletişim</sub>
-
 </div>
 
 ---
