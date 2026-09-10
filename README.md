@@ -7,7 +7,7 @@
 **[Canlı portfolyo](https://kubradmrgc.github.io/portfolio/)** · **[GitHub](https://github.com/kubradmrgc)** · **[LinkedIn](https://www.linkedin.com/in/k%C3%BCbra-demirg%C3%BC%C3%A7-8a058728b)** · **[E-posta](mailto:kubradmrgc965@gmail.com)**
 
 <a href="https://kubradmrgc.github.io/portfolio/">
-  <img src="assets/live-banner.png" alt="Canlı portfolyo — kubradmrgc.github.io/portfolio" width="800" />
+  <img src="assets/live-banner.png" alt="Canlı portfolyo — kubradmrgc.github.io/portfolio" width="720" />
 </a>
 
 <a href="https://kubradmrgc.github.io/portfolio/">
