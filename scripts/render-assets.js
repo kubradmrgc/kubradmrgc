@@ -111,14 +111,14 @@ card("card-taksimetre.png", "taksimetre", taksi1, taksi2, "#fde047", "JavaScript
 
 png(
   "live-banner.png",
-  `<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="88" viewBox="0 0 1100 88">
-  <rect x="1.5" y="1.5" width="1097" height="85" rx="16" fill="#0d1117" stroke="#a855f7" stroke-width="1.5"/>
-  <text x="32" y="36" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#c084fc">${esc(liveKicker)}</text>
-  <text x="32" y="64" font-family="Segoe UI, Ubuntu, sans-serif" font-size="22" font-weight="700" fill="#f0f6fc">${esc(liveUrl)}</text>
-  <rect x="860" y="24" width="208" height="40" rx="20" fill="#a855f7"/>
-  <text x="964" y="50" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="15" font-weight="700" fill="#ffffff">${esc(liveCta)}</text>
+  `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="88" viewBox="0 0 800 88">
+  <rect x="1.5" y="1.5" width="797" height="85" rx="16" fill="#0d1117" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="24" y="36" font-family="Segoe UI, Ubuntu, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#c084fc">${esc(liveKicker)}</text>
+  <text x="24" y="64" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#f0f6fc">${esc(liveUrl)}</text>
+  <rect x="612" y="24" width="164" height="40" rx="20" fill="#a855f7"/>
+  <text x="694" y="50" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="14" font-weight="700" fill="#ffffff">${esc(liveCta)}</text>
 </svg>`,
-  1100
+  800
 );
 
 png(
