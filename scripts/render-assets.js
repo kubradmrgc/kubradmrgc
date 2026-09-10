@@ -21,7 +21,7 @@ function png(name, svg, width) {
 }
 
 const name = "K\u00fcbra Demirg\u00fc\u00e7";
-const subtitle = "Yaz\u0131l\u0131m M\u00fchendisli\u011fi \u00b7 Backend & Full-stack";
+const subtitle = "Yaz\u0131l\u0131m M\u00fchendisi \u00b7 mikroservisler, veri ve LLM";
 const hello = "Merhaba, ben K\u00fcbra";
 const uni = "F\u0131rat \u00dcniversitesi Yaz\u0131l\u0131m M\u00fchendisli\u011fi";
 const role = "Backend API & Full-stack geli\u015ftirici";
@@ -31,8 +31,13 @@ const terra1 = "Backend API geli\u015ftirme";
 const terra2 = "C# ile servis katman\u0131";
 const omdb1 = "Film veritaban\u0131 API entegrasyonu";
 const omdb2 = "Arama, detay ve listeleme";
-const web1 = "Web laboratuvar ve frontend denemeleri";
-const web2 = "TypeScript ile aray\u00fcz \u00e7al\u0131\u015fmalar\u0131";
+const portfolio1 = "Ki\u015fisel m\u00fchendis portfolyosu";
+const portfolio2 = "Se\u00e7ilmi\u015f i\u015fler, deneyim ve ileti\u015fim";
+const taksi1 = "81 il taksi \u00fccreti, durak ve \u015fikayet";
+const taksi2 = "Canl\u0131 harita ve yolculuk hesab\u0131";
+const liveKicker = "CANLI PORTFOLYO";
+const liveUrl = "kubradmrgc.github.io/portfolio";
+const liveCta = "Siteyi a\u00e7  \u2192";
 const qubit1 = "IT quiz platformu \u2014 mobil, API ve servisler";
 const qubit2 = "Monorepo: Go \u00b7 TypeScript \u00b7 Docker";
 const statsTitle = "GitHub istatistikleri";
@@ -101,7 +106,20 @@ card("card-cve.png", "akilli-cve-analizi", cve1, cve2, "#c084fc", "Python  FastA
 card("card-qubit.png", "QubIT", qubit1, qubit2, "#67e8f9", "Go  TypeScript  Docker", "#00ADD8", "#22d3ee");
 card("card-terravision.png", "TerraVision", terra1, terra2, "#67e8f9", "C#  .NET", "#178600", "#a855f7");
 card("card-omdb.png", "omdb-project", omdb1, omdb2, "#fde047", "JavaScript", "#f1e05a", "#f7df1e");
-card("card-weblab.png", "web-lab-hello", web1, web2, "#7dd3fc", "TypeScript", "#3178c6", "#3178c6");
+card("card-portfolio.png", "portfolio", portfolio1, portfolio2, "#c4b5a5", "React  TypeScript  Vite", "#3178c6", "#c4b5a5");
+card("card-taksimetre.png", "taksimetre", taksi1, taksi2, "#fde047", "JavaScript", "#f1e05a", "#f7df1e");
+
+png(
+  "live-banner.png",
+  `<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="88" viewBox="0 0 1100 88">
+  <rect x="1.5" y="1.5" width="1097" height="85" rx="16" fill="#0d1117" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="32" y="36" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" font-weight="700" letter-spacing="2" fill="#c084fc">${esc(liveKicker)}</text>
+  <text x="32" y="64" font-family="Segoe UI, Ubuntu, sans-serif" font-size="22" font-weight="700" fill="#f0f6fc">${esc(liveUrl)}</text>
+  <rect x="860" y="24" width="208" height="40" rx="20" fill="#a855f7"/>
+  <text x="964" y="50" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="15" font-weight="700" fill="#ffffff">${esc(liveCta)}</text>
+</svg>`,
+  1100
+);
 
 png(
   "stats.png",
@@ -109,7 +127,7 @@ png(
   <rect x="1.5" y="1.5" width="417" height="207" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
   <text x="22" y="36" font-family="Segoe UI, Ubuntu, sans-serif" font-size="16" font-weight="700" fill="#c084fc">${esc(statsTitle)}</text>
   <text x="22" y="78" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" fill="#8b949e">${esc(repos)}</text>
-  <text x="250" y="78" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#f0f6fc">17</text>
+  <text x="250" y="78" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#f0f6fc">12</text>
   <text x="22" y="112" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" fill="#8b949e">${esc(followers)}</text>
   <text x="250" y="112" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#f0f6fc">8</text>
   <text x="22" y="146" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" fill="#8b949e">${esc(following)}</text>

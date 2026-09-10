@@ -4,7 +4,17 @@
 
 ![typing animation](assets/typing.gif)
 
-**[GitHub](https://github.com/kubradmrgc)** · **[LinkedIn](https://www.linkedin.com/in/k%C3%BCbra-demirg%C3%BC%C3%A7-8a058728b)** · **[E-posta](mailto:kubradmrgc965@gmail.com)**
+**[Canlı portfolyo](https://kubradmrgc.github.io/portfolio/)** · **[GitHub](https://github.com/kubradmrgc)** · **[LinkedIn](https://www.linkedin.com/in/k%C3%BCbra-demirg%C3%BC%C3%A7-8a058728b)** · **[E-posta](mailto:kubradmrgc965@gmail.com)**
+
+<a href="https://kubradmrgc.github.io/portfolio/">
+  <img src="assets/live-banner.png" alt="Canlı portfolyo — kubradmrgc.github.io/portfolio" width="900" />
+</a>
+
+<a href="https://kubradmrgc.github.io/portfolio/">
+  <img src="assets/portfolio-live.png" alt="Kübra Demirgüç kişisel portfolyo sitesi" width="900" />
+</a>
+
+<sub>React · TypeScript · Vite · Tailwind — seçilmiş işler, deneyim ve iletişim</sub>
 
 </div>
 
@@ -13,6 +23,8 @@
 ### Merhaba
 
 Fırat Üniversitesi **Yazılım Mühendisliği** öğrencisiyim. Backend API’ler, full-stack web uygulamaları ve temiz, sürdürülebilir kod yazmaya odaklanıyorum.
+
+İşlerimin güncel hali **[canlı portfolyoda](https://kubradmrgc.github.io/portfolio/)**.
 
 - Şu an: **[Akıllı CVE Analizi](https://github.com/kubradmrgc/akilli-cve-analizi)** — FastAPI + pgvector + React
 - Öğreniyorum: REST API tasarımı, AI destekli backend, full-stack mimari
@@ -35,20 +47,20 @@ Fırat Üniversitesi **Yazılım Mühendisliği** öğrencisiyim. Backend API’
 
 <div align="center">
 
+[![portfolio](assets/card-portfolio.png)](https://kubradmrgc.github.io/portfolio/)
 [![akilli-cve-analizi](assets/card-cve.png)](https://github.com/kubradmrgc/akilli-cve-analizi)
-[![QubIT](assets/card-qubit.png)](https://github.com/kubradmrgc/QubIT)
 
 [![TerraVision](assets/card-terravision.png)](https://github.com/kubradmrgc/TerraVision)
-[![omdb-project](assets/card-omdb.png)](https://github.com/kubradmrgc/omdb-project)
+[![taksimetre](assets/card-taksimetre.png)](https://kubradmrgc.github.io/taksimetre/)
 
 </div>
 
 | Proje | Ne yapıyor? | Yığın |
 |-------|-------------|-------|
+| [portfolio](https://kubradmrgc.github.io/portfolio/) | Kişisel mühendis sitesi — vaka anlatımlı işler | React · TypeScript · Vite |
 | [akilli-cve-analizi](https://github.com/kubradmrgc/akilli-cve-analizi) | NVD’den CVE çeker, AI ile özetler ve önceliklendirir | FastAPI · PostgreSQL/pgvector · React |
-| [QubIT](https://github.com/kubradmrgc/QubIT) | IT quiz platformu — mobil, API ve servisler | Go · TypeScript · Docker |
-| [TerraVision](https://github.com/kubradmrgc/TerraVision) | Backend API geliştirme | C# · .NET |
-| [omdb-project](https://github.com/kubradmrgc/omdb-project) | Film veritabanı API entegrasyonu | JavaScript |
+| [TerraVision](https://github.com/kubradmrgc/TerraVision) | Bitki ticareti, AR önizleme ve bahçe bakımı platformu | C# · .NET · Next.js |
+| [taksimetre](https://kubradmrgc.github.io/taksimetre/) | 81 il taksi ücreti, durak ve şikayet hatları | JavaScript |
 
 ---
 
@@ -67,7 +79,7 @@ Fırat Üniversitesi **Yazılım Mühendisliği** öğrencisiyim. Backend API’
 
 <div align="center">
 
-**[GitHub](https://github.com/kubradmrgc)** · **[LinkedIn](https://www.linkedin.com/in/k%C3%BCbra-demirg%C3%BC%C3%A7-8a058728b)** · **[E-posta](mailto:kubradmrgc965@gmail.com)**
+**[Canlı portfolyo](https://kubradmrgc.github.io/portfolio/)** · **[GitHub](https://github.com/kubradmrgc)** · **[LinkedIn](https://www.linkedin.com/in/k%C3%BCbra-demirg%C3%BC%C3%A7-8a058728b)** · **[E-posta](mailto:kubradmrgc965@gmail.com)**
 
 ![footer](assets/footer.png)
 
