@@ -1,110 +1,86 @@
 <div align="center">
 
-![header](assets/header.png)
+![Kübra Demirgüç](assets/header.png)
 
-![typing animation](assets/typing.gif)
+![Intro](assets/typing.gif)
 
-**[Canlı portfolyo](https://kubradmrgc.github.io/portfolio/)** · **[LinkedIn](https://www.linkedin.com/in/k%C3%BCbra-demirg%C3%BC%C3%A7-8a058728b)** · **[E-posta](mailto:kubradmrgc965@gmail.com)** · **[GitHub](https://github.com/kubradmrgc)**
+[Portfolio](https://kubradmrgc.github.io/portfolio/) · [LinkedIn](https://www.linkedin.com/in/k%C3%BCbra-demirg%C3%BC%C3%A7-8a058728b) · [Email](mailto:kubradmrgc965@gmail.com)
 
 <a href="https://kubradmrgc.github.io/portfolio/">
-  <img src="assets/live-banner.png" alt="Canlı portfolyo — kubradmrgc.github.io/portfolio" width="720" />
+  <img src="assets/live-banner.png" alt="Portfolio — kubradmrgc.github.io/portfolio" width="720" />
 </a>
 
 </div>
 
----
+## About
 
-### Kübra Demirgüç
+I'm a final-year Software Engineering student at Fırat University, focused on backend and full-stack development. I design REST APIs and build the web and mobile clients that use them, mostly with .NET, Python and TypeScript.
 
-Fırat Üniversitesi **Yazılım Mühendisliği** 4. sınıf öğrencisiyim. Backend API, full-stack web ve mobil ürünler geliştiriyorum. **Staj ve junior backend / full-stack** rollerine açığım.
+I'm looking for **software engineering internships and junior backend or full-stack roles**.
 
-İngilizce tarama için: *Software engineering student building APIs and full-stack products (.NET, Python, TypeScript). Open to internships.*
+- **Currently building:** [TerraVision](https://github.com/kubradmrgc/TerraVision), a plant marketplace with AR preview and real-time updates across web and mobile
+- **Interested in:** API design, clean architecture, data pipelines and applied LLMs
 
-- **Canlı site:** [kubradmrgc.github.io/portfolio](https://kubradmrgc.github.io/portfolio/)
-- **Şu an:** [TerraVision](https://github.com/kubradmrgc/TerraVision) (e-ticaret + AR + realtime) ve [SpeechApp](https://github.com/kubradmrgc/YMH219-SpeechApp) (çevrimdışı TTS/STT)
-- **Odak:** REST API tasarımı, temiz katmanlı kod, uçtan uca çalışan sistemler
-- **Aradığım:** ürün ekibinde staj / junior — backend ağırlıklı, full-stack de olur
-
----
-
-## Teknoloji
-
-Diller ve araçlar, ödev sayısından değil **teslim ettiğim ürünlerden** geliyor.
-
-<div align="center">
-
-![tech stack](assets/tech.png)
-
-</div>
-
-| Katman | Kullandıklarım |
-|--------|----------------|
-| Dil | C#, TypeScript, Python, JavaScript, Go |
-| Backend | ASP.NET Core 9, FastAPI, SignalR, JWT |
-| İstemci | Next.js 15, React, React Native |
-| Veri | PostgreSQL / pgvector, SQL Server, EF Core, MySQL |
-| Çalıştırma | Docker, GitHub Actions CI |
-
----
-
-## İnceleme için 4 proje
-
-İşe alım taramasında zaman kısıtlı. Bu dörtlü, ne ürettiğimi en net gösterir. Hepsi **herkese açık**.
+## Featured Projects
 
 <div align="center">
 
 [![TerraVision](assets/card-terravision.png)](https://github.com/kubradmrgc/TerraVision)
-[![akilli-cve-analizi](assets/card-cve.png)](https://github.com/kubradmrgc/akilli-cve-analizi)
+[![CVE Analysis Assistant](assets/card-cve.png)](https://github.com/kubradmrgc/akilli-cve-analizi)
 
-[![taksimetre](assets/card-taksimetre.png)](https://kubradmrgc.github.io/taksimetre/)
-[![YMH219-SpeechApp](assets/card-speech.png)](https://github.com/kubradmrgc/YMH219-SpeechApp)
-
-</div>
-
-| Proje | Ne işe yarıyor | Neden bakın | Yığın |
-|-------|----------------|-------------|-------|
-| [TerraVision](https://github.com/kubradmrgc/TerraVision) | Bitki e-ticareti, AR önizleme, bahçe bakımı, danışmanlık sohbeti, TerraTakas | Tek API üzerinde web + mobil, SignalR realtime, CI | ASP.NET Core 9 · Next.js · React Native |
-| [akilli-cve-analizi](https://github.com/kubradmrgc/akilli-cve-analizi) | NVD’den CVE çeker, AI ile özetler, risk skorlar, panele ve Telegram’a iletir | Backend + RAG + React panel, çalışan uçtan uca akış | FastAPI · PostgreSQL/pgvector · React |
-| [taksimetre](https://github.com/kubradmrgc/taksimetre) | 81 il taksi ücreti, canlı GPS yolculuk, harita, durak ve şikayet hatları | [Canlı demo](https://kubradmrgc.github.io/taksimetre/) — tarayıcıda açılır | JavaScript · PWA |
-| [YMH219-SpeechApp](https://github.com/kubradmrgc/YMH219-SpeechApp) | Türkçe metni seslendirir, mikrofon/WAV konuşmayı yazıya çevirir (internetsiz) | Servis katmanı, iptal/ilerleme, hata yönetimi | C# · .NET 9 · Vosk · NAudio |
-
-**90 saniyelik tur:** canlı portfolyo → TerraVision README mimarisi → CVE panel akışı → taksimetre canlı site.
-
----
-
-## Diğer seçili çalışmalar
-
-| Çalışma | Not |
-|---------|-----|
-| [portfolio](https://github.com/kubradmrgc/portfolio) | Kişisel mühendis sitesi, vaka anlatımlı işler. React + TypeScript + Vite + Tailwind. |
-| [QubIT](https://github.com/kubradmrgc/QubIT) | IT quiz platformu (Go servisler, React Native, Redis/Kafka iskeleti). Repo özel; mimari üzerine konuşabilirim. |
-| [akredid](https://github.com/kubradmrgc/akredid) | Akademik belge doğrulama ağı (W3C DID / Verifiable Credential). İki kişilik ekip, Scrum + ADR. Repo özel. |
-| [sigorta-dwh-pipeline](https://github.com/kubradmrgc/sigorta-dwh-pipeline) | Sigorta OLTP → staging → DWH → datamart. Informatica CDI + MySQL, 26 mapping / 10 analitik sorgu. |
-| [YMH219-ChatApp](https://github.com/kubradmrgc/YMH219-ChatApp) | C# TCP sohbet: sunucu + istemci, özel mesaj, LAN. |
-
----
-
-## GitHub özeti
-
-<div align="center">
-
-![GitHub stats](assets/stats.png)
-![Top languages](assets/langs.png)
+[![Taksimetre](assets/card-taksimetre.png)](https://kubradmrgc.github.io/taksimetre/)
+[![Portfolio](assets/card-portfolio.png)](https://kubradmrgc.github.io/portfolio/)
 
 </div>
 
-Dil çubukları GitHub’ın ödev ağırlıklı byte sayımı değil; **son dönemde ürün verdiğim diller**.
+### [TerraVision](https://github.com/kubradmrgc/TerraVision)
 
----
+A plant e-commerce platform with AR product preview, a garden care planner, consultant chat and peer-to-peer item swaps. A single ASP.NET Core 9 API serves both a Next.js web app and a React Native mobile app, with real-time cart, order and chat updates over SignalR and a CI pipeline for all three.
 
-## İletişim
+### [CVE Analysis Assistant](https://github.com/kubradmrgc/akilli-cve-analizi)
 
-Staj / mülakat / proje konuşması için yazmanız yeterli.
+Pulls vulnerabilities from the NVD, summarizes and risk-scores them with an LLM, finds related CVEs through vector search and sends critical alerts to Telegram. Built with FastAPI, PostgreSQL with pgvector, and a React dashboard.
+
+### [Taksimetre](https://github.com/kubradmrgc/taksimetre) · [live demo](https://kubradmrgc.github.io/taksimetre/)
+
+A taxi fare calculator covering all 81 provinces in Turkey, with live GPS trip tracking, route mapping and a taxi stand directory. Ships as an installable PWA.
+
+### [Portfolio](https://github.com/kubradmrgc/portfolio) · [live site](https://kubradmrgc.github.io/portfolio/)
+
+My personal site with project case studies, experience and contact details. Built with React, TypeScript, Vite and Tailwind CSS.
+
+## Other Work
+
+| Project | Description |
+|---------|-------------|
+| **QubIT** *(private)* | IT quiz platform with Go microservices, a React Native app, adaptive difficulty and a real-time leaderboard |
+| **akredid** *(private)* | Academic credential verification built on W3C DIDs and Verifiable Credentials; two-person team working in Scrum with ADRs |
+| [sigorta-dwh-pipeline](https://github.com/kubradmrgc/sigorta-dwh-pipeline) | Insurance data warehouse from OLTP to staging, DWH and data marts, built with Informatica CDI and MySQL |
+
+## Tech Stack
 
 <div align="center">
 
-**[Canlı portfolyo](https://kubradmrgc.github.io/portfolio/)** · **[LinkedIn](https://www.linkedin.com/in/k%C3%BCbra-demirg%C3%BC%C3%A7-8a058728b)** · **[kubradmrgc965@gmail.com](mailto:kubradmrgc965@gmail.com)**
+![Tech stack](assets/tech.png)
 
-![footer](assets/footer.png)
+</div>
+
+| Area | Tools |
+|------|-------|
+| Languages | C#, TypeScript, Python, JavaScript, Go |
+| Backend | ASP.NET Core, FastAPI, SignalR, JWT |
+| Frontend & mobile | Next.js, React, React Native |
+| Data | PostgreSQL, pgvector, SQL Server, EF Core, MySQL |
+| Tooling | Docker, Git, GitHub Actions |
+
+## Contact
+
+Happy to talk about internships, junior roles or any of the projects above.
+
+<div align="center">
+
+[Portfolio](https://kubradmrgc.github.io/portfolio/) · [LinkedIn](https://www.linkedin.com/in/k%C3%BCbra-demirg%C3%BC%C3%A7-8a058728b) · [kubradmrgc965@gmail.com](mailto:kubradmrgc965@gmail.com)
+
+![](assets/footer.png)
 
 </div>

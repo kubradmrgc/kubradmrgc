@@ -3,6 +3,7 @@ const path = require("path");
 const { Resvg } = require("@resvg/resvg-js");
 
 const outDir = path.join(__dirname, "..", "assets");
+const FONT = "Segoe UI, Ubuntu, Helvetica, Arial, sans-serif";
 
 function esc(s) {
   return String(s)
@@ -15,39 +16,9 @@ function png(name, svg, width) {
   const rendered = new Resvg(svg, { fitTo: { mode: "width", value: width } })
     .render()
     .asPng();
-  const file = path.join(outDir, name);
-  fs.writeFileSync(file, rendered);
+  fs.writeFileSync(path.join(outDir, name), rendered);
   console.log("wrote", name, rendered.length);
 }
-
-const name = "K\u00fcbra Demirg\u00fc\u00e7";
-const subtitle = "Yaz\u0131l\u0131m M\u00fchendisi \u00b7 mikroservisler, veri ve LLM";
-const hello = "Merhaba, ben K\u00fcbra";
-const uni = "F\u0131rat \u00dcniversitesi Yaz\u0131l\u0131m M\u00fchendisli\u011fi";
-const role = "Backend API & Full-stack geli\u015ftirici";
-const cve1 = "NVD'den CVE \u00e7eker, AI ile \u00f6zetler";
-const cve2 = "ve \u00f6nceliklendirir";
-const terra1 = "Bitki e-ticareti, AR ve bah\u00e7e bak\u0131m\u0131";
-const terra2 = "Ayn\u0131 API \u00fczerinde web + mobil";
-const omdb1 = "Film veritaban\u0131 API entegrasyonu";
-const omdb2 = "Arama, detay ve listeleme";
-const portfolio1 = "Ki\u015fisel m\u00fchendis portfolyosu";
-const portfolio2 = "Se\u00e7ilmi\u015f i\u015fler, deneyim ve ileti\u015fim";
-const taksi1 = "81 il taksi \u00fccreti, GPS ve harita";
-const taksi2 = "Canl\u0131 demo \u00b7 PWA";
-const speech1 = "\u00c7evrimd\u0131\u015f\u0131 T\u00fcrk\u00e7e TTS / STT";
-const speech2 = "Servis katmanl\u0131 Windows uygulamas\u0131";
-const liveKicker = "CANLI PORTFOLYO";
-const liveUrl = "kubradmrgc.github.io/portfolio";
-const liveCta = "Siteyi a\u00e7  \u2192";
-const qubit1 = "IT quiz platformu \u2014 mobil, API ve servisler";
-const qubit2 = "Monorepo: Go \u00b7 TypeScript \u00b7 Docker";
-const statsTitle = "GitHub istatistikleri";
-const repos = "A\u00e7\u0131k repolar";
-const followers = "Takip\u00e7i";
-const following = "Takip edilen";
-const since = "GitHub'da";
-const langsTitle = "Kulland\u0131\u011f\u0131m diller";
 
 png(
   "header.png",
@@ -60,19 +31,10 @@ png(
     </linearGradient>
   </defs>
   <path fill="url(#banner)" d="M0,0 H1100 V168 C920,208 730,128 550,168 C370,208 180,128 0,168 Z"/>
-  <text x="550" y="86" text-anchor="middle" font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="48" font-weight="700" fill="#ffffff">${esc(name)}</text>
-  <text x="550" y="122" text-anchor="middle" font-family="Segoe UI, Ubuntu, Helvetica, Arial, sans-serif" font-size="16" fill="#f5d0fe">${esc(subtitle)}</text>
+  <text x="550" y="86" text-anchor="middle" font-family="${FONT}" font-size="48" font-weight="700" fill="#ffffff">${esc("K\u00fcbra Demirg\u00fc\u00e7")}</text>
+  <text x="550" y="122" text-anchor="middle" font-family="${FONT}" font-size="17" fill="#f5d0fe">${esc("Software Engineer \u00b7 Backend & Full-Stack")}</text>
 </svg>`,
   1100
-);
-
-png(
-  "typing.png",
-  `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 56" width="720" height="56">
-  <text x="350" y="36" text-anchor="middle" font-family="Consolas, Courier New, monospace" font-size="22" font-weight="600" fill="#c084fc">${esc(hello)}</text>
-  <rect x="545" y="18" width="10" height="22" rx="1" fill="#c084fc"/>
-</svg>`,
-  720
 );
 
 png(
@@ -89,113 +51,100 @@ png(
   1100
 );
 
-function card(file, title, line1, line2, color, lang, langColor, widthColor) {
+png(
+  "live-banner.png",
+  `<svg xmlns="http://www.w3.org/2000/svg" width="720" height="84" viewBox="0 0 720 84">
+  <rect x="1.5" y="1.5" width="717" height="81" rx="16" fill="#0d1117" stroke="#a855f7" stroke-width="1.5"/>
+  <text x="28" y="34" font-family="${FONT}" font-size="11" font-weight="700" letter-spacing="2" fill="#c084fc">PORTFOLIO</text>
+  <text x="28" y="60" font-family="${FONT}" font-size="20" font-weight="700" fill="#f0f6fc">${esc("kubradmrgc.github.io/portfolio  \u2192")}</text>
+</svg>`,
+  720
+);
+
+function card(file, { title, line1, line2, stack, tag, accent, dot }) {
+  const tagWidth = tag.length * 7 + 22;
   png(
     file,
     `<svg xmlns="http://www.w3.org/2000/svg" width="420" height="150" viewBox="0 0 420 150">
-  <rect x="1.5" y="1.5" width="417" height="147" rx="14" fill="#0d1117" stroke="${widthColor}" stroke-width="1.5"/>
-  <text x="22" y="38" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="700" fill="${color}">${esc(title)}</text>
-  <text x="22" y="68" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" fill="#c9d1d9">${esc(line1)}</text>
-  <text x="22" y="88" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" fill="#8b949e">${esc(line2)}</text>
-  <circle cx="28" cy="122" r="6" fill="${langColor}"/>
-  <text x="42" y="127" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" fill="#c9d1d9">${esc(lang)}</text>
+  <rect x="1.5" y="1.5" width="417" height="147" rx="14" fill="#0d1117" stroke="${accent}" stroke-width="1.5"/>
+  <text x="22" y="40" font-family="${FONT}" font-size="18" font-weight="700" fill="${accent}">${esc(title)}</text>
+  <rect x="${398 - tagWidth}" y="22" width="${tagWidth}" height="24" rx="12" fill="none" stroke="${accent}" stroke-opacity="0.6"/>
+  <text x="${398 - tagWidth / 2}" y="38" text-anchor="middle" font-family="${FONT}" font-size="11" font-weight="600" fill="${accent}">${esc(tag)}</text>
+  <text x="22" y="72" font-family="${FONT}" font-size="13" fill="#e6edf3">${esc(line1)}</text>
+  <text x="22" y="92" font-family="${FONT}" font-size="13" fill="#8b949e">${esc(line2)}</text>
+  <circle cx="28" cy="123" r="5" fill="${dot}"/>
+  <text x="40" y="127" font-family="${FONT}" font-size="12" fill="#c9d1d9">${esc(stack)}</text>
 </svg>`,
     420
   );
 }
 
-card("card-cve.png", "akilli-cve-analizi", cve1, cve2, "#c084fc", "Python  FastAPI  pgvector", "#3572A5", "#a855f7");
-card("card-qubit.png", "QubIT", qubit1, qubit2, "#67e8f9", "Go  TypeScript  Docker", "#00ADD8", "#22d3ee");
-card("card-terravision.png", "TerraVision", terra1, terra2, "#67e8f9", ".NET 9  Next.js  React Native", "#512BD4", "#a855f7");
-card("card-omdb.png", "omdb-project", omdb1, omdb2, "#fde047", "JavaScript", "#f1e05a", "#f7df1e");
-card("card-portfolio.png", "portfolio", portfolio1, portfolio2, "#c4b5a5", "React  TypeScript  Vite", "#3178c6", "#c4b5a5");
-card("card-taksimetre.png", "taksimetre", taksi1, taksi2, "#fde047", "JavaScript  PWA", "#f1e05a", "#f7df1e");
-card("card-speech.png", "YMH219-SpeechApp", speech1, speech2, "#7dd3fc", "C#  .NET 9  Vosk", "#178600", "#22d3ee");
+card("card-terravision.png", {
+  title: "TerraVision",
+  tag: "Full-stack",
+  line1: "Plant marketplace with AR product preview",
+  line2: "One API for web and mobile, real-time updates",
+  stack: "ASP.NET Core 9 \u00b7 Next.js \u00b7 React Native",
+  accent: "#67e8f9",
+  dot: "#512BD4",
+});
 
-png(
-  "live-banner.png",
-  `<svg xmlns="http://www.w3.org/2000/svg" width="720" height="84" viewBox="0 0 720 84">
-  <rect x="1.5" y="1.5" width="717" height="81" rx="16" fill="#0d1117" stroke="#a855f7" stroke-width="1.5"/>
-  <text x="28" y="34" font-family="Segoe UI, Ubuntu, sans-serif" font-size="11" font-weight="700" letter-spacing="2" fill="#c084fc">${esc(liveKicker)}</text>
-  <text x="28" y="60" font-family="Segoe UI, Ubuntu, sans-serif" font-size="20" font-weight="700" fill="#f0f6fc">${esc(liveUrl)}  \u2192</text>
-</svg>`,
-  720
-);
+card("card-cve.png", {
+  title: "CVE Analysis Assistant",
+  tag: "AI \u00b7 Security",
+  line1: "LLM-powered vulnerability triage",
+  line2: "NVD sync, risk scoring, vector search",
+  stack: "FastAPI \u00b7 PostgreSQL / pgvector \u00b7 React",
+  accent: "#c084fc",
+  dot: "#3572A5",
+});
 
-png(
-  "stats.png",
-  `<svg xmlns="http://www.w3.org/2000/svg" width="420" height="210" viewBox="0 0 420 210">
-  <rect x="1.5" y="1.5" width="417" height="207" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
-  <text x="22" y="36" font-family="Segoe UI, Ubuntu, sans-serif" font-size="16" font-weight="700" fill="#c084fc">${esc(statsTitle)}</text>
-  <text x="22" y="78" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" fill="#8b949e">${esc(repos)}</text>
-  <text x="250" y="78" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#f0f6fc">13</text>
-  <text x="22" y="112" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" fill="#8b949e">${esc(followers)}</text>
-  <text x="250" y="112" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#f0f6fc">10</text>
-  <text x="22" y="146" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" fill="#8b949e">${esc(following)}</text>
-  <text x="250" y="146" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#f0f6fc">9</text>
-  <text x="22" y="180" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" fill="#8b949e">${esc(since)}</text>
-  <text x="250" y="180" font-family="Segoe UI, Ubuntu, sans-serif" font-size="18" font-weight="700" fill="#f0f6fc">2023</text>
-</svg>`,
-  420
-);
+card("card-taksimetre.png", {
+  title: "Taksimetre",
+  tag: "Live demo",
+  line1: "Taxi fare calculator for all 81 provinces",
+  line2: "Live GPS trips, route map, installable PWA",
+  stack: "JavaScript \u00b7 PWA",
+  accent: "#fde047",
+  dot: "#f1e05a",
+});
 
-png(
-  "langs.png",
-  `<svg xmlns="http://www.w3.org/2000/svg" width="420" height="210" viewBox="0 0 420 210">
-  <rect x="1.5" y="1.5" width="417" height="207" rx="14" fill="#0d1117" stroke="#30363d" stroke-width="1.5"/>
-  <text x="22" y="36" font-family="Segoe UI, Ubuntu, sans-serif" font-size="16" font-weight="700" fill="#c084fc">${esc(langsTitle)}</text>
-  <text x="22" y="68" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" fill="#c9d1d9">TypeScript</text>
-  <rect x="110" y="56" width="280" height="14" rx="7" fill="#21262d"/>
-  <rect x="110" y="56" width="252" height="14" rx="7" fill="#3178c6"/>
-  <text x="22" y="98" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" fill="#c9d1d9">C#</text>
-  <rect x="110" y="86" width="280" height="14" rx="7" fill="#21262d"/>
-  <rect x="110" y="86" width="236" height="14" rx="7" fill="#178600"/>
-  <text x="22" y="128" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" fill="#c9d1d9">Python</text>
-  <rect x="110" y="116" width="280" height="14" rx="7" fill="#21262d"/>
-  <rect x="110" y="116" width="210" height="14" rx="7" fill="#3572A5"/>
-  <text x="22" y="158" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" fill="#c9d1d9">JavaScript</text>
-  <rect x="110" y="146" width="280" height="14" rx="7" fill="#21262d"/>
-  <rect x="110" y="146" width="182" height="14" rx="7" fill="#f1e05a"/>
-  <text x="22" y="188" font-family="Segoe UI, Ubuntu, sans-serif" font-size="12" fill="#c9d1d9">Go</text>
-  <rect x="110" y="176" width="280" height="14" rx="7" fill="#21262d"/>
-  <rect x="110" y="176" width="154" height="14" rx="7" fill="#00ADD8"/>
-</svg>`,
-  420
-);
+card("card-portfolio.png", {
+  title: "Portfolio",
+  tag: "Live site",
+  line1: "Personal engineering portfolio",
+  line2: "Selected work, experience and contact",
+  stack: "React \u00b7 TypeScript \u00b7 Vite \u00b7 Tailwind",
+  accent: "#f9a8d4",
+  dot: "#3178c6",
+});
+
+const badges = [
+  [["Python", "#3776AB"], ["FastAPI", "#009688"], ["C#", "#239120"], [".NET", "#512BD4"], ["Go", "#00ADD8"], ["TypeScript", "#3178C6"], ["Next.js", "#000000"], ["React", "#20232A", "#61DAFB"], ["React Native", "#0EA5E9"]],
+  [["PostgreSQL", "#4169E1"], ["SQL Server", "#CC2927"], ["Docker", "#2496ED"], ["SignalR", "#0EA5E9"], ["Git", "#F05032"], ["GitHub Actions", "#181717"]],
+];
+
+function badgeRow(row, y, totalWidth) {
+  const widths = row.map(([label]) => label.length * 8 + 28);
+  const gap = 10;
+  const rowWidth = widths.reduce((a, b) => a + b, 0) + gap * (row.length - 1);
+  let x = (totalWidth - rowWidth) / 2;
+  return row
+    .map(([label, bg, fg = "#ffffff"], i) => {
+      const w = widths[i];
+      const out = `<rect x="${x}" y="${y}" width="${w}" height="32" rx="8" fill="${bg}"/>
+  <text x="${x + w / 2}" y="${y + 21}" text-anchor="middle" font-family="${FONT}" font-size="13" font-weight="600" fill="${fg}">${esc(label)}</text>`;
+      x += w + gap;
+      return out;
+    })
+    .join("\n  ");
+}
 
 png(
   "tech.png",
-  `<svg xmlns="http://www.w3.org/2000/svg" width="900" height="120" viewBox="0 0 900 120">
-  <rect x="0" y="18" width="92" height="32" rx="8" fill="#3776AB"/>
-  <text x="46" y="39" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="600" fill="#fff">Python</text>
-  <rect x="102" y="18" width="92" height="32" rx="8" fill="#009688"/>
-  <text x="148" y="39" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="600" fill="#fff">FastAPI</text>
-  <rect x="204" y="18" width="64" height="32" rx="8" fill="#239120"/>
-  <text x="236" y="39" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="600" fill="#fff">C#</text>
-  <rect x="278" y="18" width="64" height="32" rx="8" fill="#512BD4"/>
-  <text x="310" y="39" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="600" fill="#fff">.NET</text>
-  <rect x="352" y="18" width="56" height="32" rx="8" fill="#00ADD8"/>
-  <text x="380" y="39" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="600" fill="#fff">Go</text>
-  <rect x="418" y="18" width="108" height="32" rx="8" fill="#3178C6"/>
-  <text x="472" y="39" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="600" fill="#fff">TypeScript</text>
-  <rect x="536" y="18" width="80" height="32" rx="8" fill="#000000"/>
-  <text x="576" y="39" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="600" fill="#fff">Next.js</text>
-  <rect x="626" y="18" width="80" height="32" rx="8" fill="#20232A"/>
-  <text x="666" y="39" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="600" fill="#61DAFB">React</text>
-  <rect x="716" y="18" width="120" height="32" rx="8" fill="#0EA5E9"/>
-  <text x="776" y="39" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="600" fill="#fff">React Native</text>
-  <rect x="80" y="68" width="110" height="32" rx="8" fill="#4169E1"/>
-  <text x="135" y="89" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="600" fill="#fff">PostgreSQL</text>
-  <rect x="200" y="68" width="100" height="32" rx="8" fill="#CC2927"/>
-  <text x="250" y="89" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="600" fill="#fff">SQL Server</text>
-  <rect x="310" y="68" width="86" height="32" rx="8" fill="#2496ED"/>
-  <text x="353" y="89" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="600" fill="#fff">Docker</text>
-  <rect x="406" y="68" width="80" height="32" rx="8" fill="#0EA5E9"/>
-  <text x="446" y="89" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="600" fill="#fff">SignalR</text>
-  <rect x="496" y="68" width="64" height="32" rx="8" fill="#F05032"/>
-  <text x="528" y="89" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="600" fill="#fff">Git</text>
-  <rect x="570" y="68" width="86" height="32" rx="8" fill="#181717"/>
-  <text x="613" y="89" text-anchor="middle" font-family="Segoe UI, Ubuntu, sans-serif" font-size="13" font-weight="600" fill="#fff">GitHub</text>
+  `<svg xmlns="http://www.w3.org/2000/svg" width="960" height="100" viewBox="0 0 960 100">
+  ${badgeRow(badges[0], 8, 960)}
+  ${badgeRow(badges[1], 56, 960)}
 </svg>`,
-  900
+  960
 );
