@@ -14,48 +14,50 @@
 
 ## About
 
-I'm a final-year Software Engineering student at Fırat University, focused on backend and full-stack development. I design REST APIs and build the web and mobile clients that use them, mostly with .NET, Python and TypeScript.
+I'm a final-year Software Engineering student at Fırat University. I build backend APIs, full-stack products and Windows desktop systems, mostly with C#/.NET, Python and TypeScript.
 
-I'm looking for **software engineering internships and junior backend or full-stack roles**.
+Open to **internships and junior backend / full-stack roles**.
 
-- **Currently building:** [TerraVision](https://github.com/kubradmrgc/TerraVision), a plant marketplace with AR preview and real-time updates across web and mobile
-- **Interested in:** API design, clean architecture, data pipelines and applied LLMs
+- **Now shipping:** [DevaSoft](https://github.com/kubradmrgc/AktarOtomasyonu-DevaSoft) — pharmacy automation with inventory, sales and Gemini-assisted product content
+- **Also active:** [TerraVision](https://github.com/kubradmrgc/TerraVision) — plant marketplace (web + mobile) on one ASP.NET Core API
+- **Focus:** clean layered architecture, SQL-backed systems, REST APIs and applied LLMs
 
 ## Featured Projects
 
 <div align="center">
 
+[![DevaSoft](assets/card-devasoft.png)](https://github.com/kubradmrgc/AktarOtomasyonu-DevaSoft)
 [![TerraVision](assets/card-terravision.png)](https://github.com/kubradmrgc/TerraVision)
-[![CVE Analysis Assistant](assets/card-cve.png)](https://github.com/kubradmrgc/akilli-cve-analizi)
 
+[![CVE Analysis Assistant](assets/card-cve.png)](https://github.com/kubradmrgc/akilli-cve-analizi)
 [![Taksimetre](assets/card-taksimetre.png)](https://kubradmrgc.github.io/taksimetre/)
-[![Portfolio](assets/card-portfolio.png)](https://kubradmrgc.github.io/portfolio/)
 
 </div>
 
+### [DevaSoft](https://github.com/kubradmrgc/AktarOtomasyonu-DevaSoft)
+
+Windows desktop automation for herbal / pharmacy shops: products, stock, sales, purchase orders, role-based access and audit logs. Gemini generates product descriptions and usage notes. Layered C# services on SQL Server with DevExpress WinForms UI.
+
 ### [TerraVision](https://github.com/kubradmrgc/TerraVision)
 
-A plant e-commerce platform with AR product preview, a garden care planner, consultant chat and peer-to-peer item swaps. A single ASP.NET Core 9 API serves both a Next.js web app and a React Native mobile app, with real-time cart, order and chat updates over SignalR and a CI pipeline for all three.
+Plant e-commerce with AR product preview, garden care planning, consultant chat and peer-to-peer swaps. One ASP.NET Core 9 API serves Next.js web and React Native mobile, with SignalR for live cart, orders and chat, plus CI for all three.
 
 ### [CVE Analysis Assistant](https://github.com/kubradmrgc/akilli-cve-analizi)
 
-Pulls vulnerabilities from the NVD, summarizes and risk-scores them with an LLM, finds related CVEs through vector search and sends critical alerts to Telegram. Built with FastAPI, PostgreSQL with pgvector, and a React dashboard.
+Ingests NVD vulnerabilities, summarizes and risk-scores them with an LLM, finds related CVEs via vector search and alerts on critical findings through Telegram. FastAPI, PostgreSQL with pgvector and a React dashboard.
 
 ### [Taksimetre](https://github.com/kubradmrgc/taksimetre) · [live demo](https://kubradmrgc.github.io/taksimetre/)
 
-A taxi fare calculator covering all 81 provinces in Turkey, with live GPS trip tracking, route mapping and a taxi stand directory. Ships as an installable PWA.
-
-### [Portfolio](https://github.com/kubradmrgc/portfolio) · [live site](https://kubradmrgc.github.io/portfolio/)
-
-My personal site with project case studies, experience and contact details. Built with React, TypeScript, Vite and Tailwind CSS.
+Taxi fare calculator for all 81 provinces in Turkey, with live GPS trip tracking, route mapping and a taxi stand directory. Installable PWA.
 
 ## Other Work
 
 | Project | Description |
 |---------|-------------|
-| **QubIT** *(private)* | IT quiz platform with Go microservices, a React Native app, adaptive difficulty and a real-time leaderboard |
-| **akredid** *(private)* | Academic credential verification built on W3C DIDs and Verifiable Credentials; two-person team working in Scrum with ADRs |
-| [sigorta-dwh-pipeline](https://github.com/kubradmrgc/sigorta-dwh-pipeline) | Insurance data warehouse from OLTP to staging, DWH and data marts, built with Informatica CDI and MySQL |
+| [portfolio](https://kubradmrgc.github.io/portfolio/) | Personal site with case studies and contact — React, TypeScript, Vite, Tailwind |
+| **QubIT** *(private)* | IT quiz platform: Go services, React Native, adaptive difficulty, real-time leaderboard |
+| **akredid** *(private)* | Academic credential verification with W3C DIDs / Verifiable Credentials; two-person Scrum team |
+| [sigorta-dwh-pipeline](https://github.com/kubradmrgc/sigorta-dwh-pipeline) | Insurance DWH: OLTP → staging → warehouse → data marts (Informatica CDI + MySQL) |
 
 ## Tech Stack
 
@@ -68,14 +70,14 @@ My personal site with project case studies, experience and contact details. Buil
 | Area | Tools |
 |------|-------|
 | Languages | C#, TypeScript, Python, JavaScript, Go |
-| Backend | ASP.NET Core, FastAPI, SignalR, JWT |
+| Backend & desktop | ASP.NET Core, WinForms, FastAPI, SignalR, JWT |
 | Frontend & mobile | Next.js, React, React Native |
-| Data | PostgreSQL, pgvector, SQL Server, EF Core, MySQL |
-| Tooling | Docker, Git, GitHub Actions |
+| Data | SQL Server, PostgreSQL, pgvector, EF Core, MySQL, T-SQL |
+| AI & tooling | Gemini, Docker, Git, GitHub Actions |
 
 ## Contact
 
-Happy to talk about internships, junior roles or any of the projects above.
+Reach out for internships, junior roles or any project above.
 
 <div align="center">
 

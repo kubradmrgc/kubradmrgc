@@ -109,6 +109,16 @@ card("card-taksimetre.png", {
   dot: "#f1e05a",
 });
 
+card("card-devasoft.png", {
+  title: "DevaSoft",
+  tag: "Desktop \u00b7 AI",
+  line1: "Pharmacy / herbal shop automation",
+  line2: "Inventory, sales, orders, Gemini content",
+  stack: "C# \u00b7 WinForms \u00b7 SQL Server \u00b7 Gemini",
+  accent: "#34d399",
+  dot: "#178600",
+});
+
 card("card-portfolio.png", {
   title: "Portfolio",
   tag: "Live site",
@@ -121,7 +131,7 @@ card("card-portfolio.png", {
 
 const badges = [
   [["Python", "#3776AB"], ["FastAPI", "#009688"], ["C#", "#239120"], [".NET", "#512BD4"], ["Go", "#00ADD8"], ["TypeScript", "#3178C6"], ["Next.js", "#000000"], ["React", "#20232A", "#61DAFB"], ["React Native", "#0EA5E9"]],
-  [["PostgreSQL", "#4169E1"], ["SQL Server", "#CC2927"], ["Docker", "#2496ED"], ["SignalR", "#0EA5E9"], ["Git", "#F05032"], ["GitHub Actions", "#181717"]],
+  [["PostgreSQL", "#4169E1"], ["SQL Server", "#CC2927"], ["WinForms", "#512BD4"], ["Docker", "#2496ED"], ["SignalR", "#0EA5E9"], ["Gemini", "#4285F4"], ["GitHub Actions", "#181717"]],
 ];
 
 function badgeRow(row, y, totalWidth) {
